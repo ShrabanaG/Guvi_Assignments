@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Travel Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Volkhov:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmlincludejs"></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#FEFCFB]">
+    <nav
+      class="flex items-center justify-between px-8 mx-auto max-w-7xl h-[80px]"
+    >
+      <div class="flex items-center gap-10">
+        <div class="w-[130px] h-[24px]">
+          <img
+            src="./assets/Logo-min.png"
+            alt="navbar-logo"
+            class="w-full h-full object-contain"
+          />
+        </div>
+        <div
+          class="hidden md:flex items-center gap-8 text-[#222222] font-medium"
+        >
+          <span class="cursor-pointer">Home</span>
+          <span class="cursor-pointer">About</span>
+          <span class="cursor-pointer">Destination</span>
+          <span class="cursor-pointer">Tour</span>
+          <span class="cursor-pointer">Blog</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <span class="text-[#FD8D3A] font-semibold cursor-pointer">Login</span>
+        <span
+          class="bg-[#FA7436] text-white rounded-[5px] px-5 py-2 text-sm font-semibold cursor-pointer hover:bg-[#e76823] transition"
+        >
+          Sign Up
+        </span>
+      </div>
+    </nav>
+
+    <section
+      class="mx-auto max-w-7xl px-8 py-16 flex flex-col-reverse md:flex-row items-center justify-between gap-8"
+    >
+      <div class="flex-1">
+        <h1
+          class="font-[Volkhov] font-bold text-[64px] leading-[74px] text-black"
+        >
+          Get started your <br />
+          exciting <span class="text-[#FD8D3A]">journey</span> <br />
+          with us.
+        </h1>
+
+        <p class="text-[#666666] text-[16px] leading-[30px] mt-6">
+          A Team of experienced tourism professionals will <br />
+          provide you with the best advice and tips for your <br />
+          desired place.
+        </p>
+
+        <div
+          class="mt-8 bg-white border border-[#FA7436] rounded-md w-[180px] h-[60px] text-[#FA7436] font-semibold text-[16px] flex items-center justify-center shadow-sm hover:bg-[#FA7436] hover:text-white transition-all cursor-pointer"
+        >
+          Discover Now
+        </div>
+      </div>
+
+      <div class="flex-1 relative w-full max-w-[600px]">
+        <img
+          src="./assets/Hero_section_img.png"
+          alt="Hero Section Image"
+          class="w-full h-full object-contain"
+        />
+        <img
+          src="./assets/Card-1.png"
+          class="absolute top-[20px] left-[-100px]"
+          alt="card-1"
+        />
+        <img
+          src="./assets/Card-2.png"
+          class="absolute top-1/2 right-4"
+          alt="card-2"
+        />
+        <img
+          src="./assets/Card-3.png"
+          class="absolute bottom-8 left-4"
+          alt="card-3"
+        />
+      </div>
+    </section>
+    <section
+      class="w-[90%] max-w-5xl h-[124px] bg-white rounded-[5px] flex items-center justify-between shadow-lg px-6 mx-auto mt-10"
+    >
+      <div class="flex flex-col flex-1 px-3">
+        <div class="text-[#222222] flex items-center gap-1 font-semibold">
+          <span>Location</span>
+          <img src="./assets/chevron_down_logo.png" class="w-[10px] h-[5px]" />
+        </div>
+        <div class="text-[#666] text-sm">Where are you going</div>
+      </div>
+
+      <div class="flex flex-col flex-1">
+        <div class="text-[#222222] flex items-center gap-1 font-semibold pl-3">
+          <span>Date</span>
+          <img src="./assets/chevron_down_logo.png" class="w-[10px] h-[5px]" />
+        </div>
+        <div class="text-[#666] text-sm pl-3">When you will go</div>
+      </div>
+
+      <div class="flex flex-col flex-1">
+        <div class="text-[#222222] flex items-center gap-1 font-semibold pl-3">
+          <span>Guest</span>
+          <img src="./assets/chevron_down_logo.png" class="w-[10px] h-[5px]" />
+        </div>
+        <div class="text-[#666] text-sm pl-3">Number of guest</div>
+      </div>
+
+      <div class="ml-6">
+        <button
+          class="bg-[#FA7436] text-white px-6 py-3 rounded-[5px] font-semibold hover:bg-[#e5621f]"
+        >
+          Explore Now
+        </button>
+      </div>
+    </section>
+    <div>
+      <include src="./components/thingsToDo.html"></include>
+    </div>
+    <div>
+      <include src="./components/exclusiveDeals.html"></include>
+    </div>
+    <div>
+      <include src="./components/vacationPlan.html"></include>
+    </div>
+    <div>
+      <include src="./components/testimonials.html"></include>
+    </div>
+  </body>
+</html>
